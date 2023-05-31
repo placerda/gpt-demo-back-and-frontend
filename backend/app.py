@@ -26,8 +26,8 @@ CORS(app)
 def static_file(path):
     return app.send_static_file(path)
 
-@app.route("/chatvivi", methods=["POST"])
-def chatvivi():
+@app.route("/chatgpt", methods=["POST"])
+def chatgpt():
     conversation_id = request.json["conversation_id"]
     question = request.json["query"]
     print(conversation_id)
@@ -47,11 +47,11 @@ def chatvivi():
         print(response.text)
         return(response.text)
     except Exception as e:
-        logging.exception("Exception in /chatvivi")
+        logging.exception("Exception in /chatgpt")
         return jsonify({"error": str(e)}), 500
     
 @app.route("/api/get-speech-token", methods=["GET"])
-def getViviSpeechToken():
+def getGptSpeechToken():
     try:
         fetch_token_url = f"https://{SPEECH_REGION}.api.cognitive.microsoft.com/sts/v1.0/issueToken"
         headers = {
