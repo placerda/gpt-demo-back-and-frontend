@@ -11,7 +11,7 @@ export default defineConfig({
     },
     server: {
         proxy: {
-            '/chatvivi': "http://localhost:8000",
+            '/chatgpt': "http://localhost:8000",
             '/api/get-speech-token': "http://localhost:8000"
         },
         host: true

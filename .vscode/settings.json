@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f6c1e253-ecd5-4de6-841f-e10afd3947e3/resourceGroups/rg-uat-177960-boti/providers/Microsoft.Web/sites/app-fe-177960",
+    "appService.deploySubpath": "backend"
+}

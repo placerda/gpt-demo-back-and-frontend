@@ -1,1 +1,1 @@
-# gpt-demo-back-and-frontend
+# gpt-demo-frontend
